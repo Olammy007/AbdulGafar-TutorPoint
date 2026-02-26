@@ -266,6 +266,7 @@ const questions = [
             { text: "C.roots", correct: false},
         ]
     },
+    
     {
         question: ".Gymnosperms bear naked seeds because they lack___",
         answers: [
@@ -298,8 +299,8 @@ const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
 const resetButton = document.getElementById("clear-btn");
-const st = document.getElementById("st");
-const cl = document.getElementById("cl");
+const st6 = document.getElementById("st");
+const cl6 = document.getElementById("cl");
 const printButton = document.getElementById("print-btn");
 const number = document.getElementById("number")
 let currentQuestionIndex = 0;
@@ -390,6 +391,22 @@ function selectAnswer(e){
         button.disabled = true;
     });
     nextButton.style.display = "block";
+}
+
+//Save data to local storage
+function myfunc() {
+    //event.preventDefault();
+    st.value;
+    cl.value;
+    score;
+
+    
+
+    localStorage.setItem('Name6', st.value);
+    localStorage.setItem('Class6', cl.value);
+    localStorage.setItem('Score6', score);
+    alert('Your result has been stored in the archive');
+    window.location.href ="subjectss2.html";
 }
 
 function showScore(){
