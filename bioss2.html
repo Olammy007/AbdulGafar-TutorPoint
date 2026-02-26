@@ -15,8 +15,9 @@ body{
 }
 .app{
     background: violet;
-    width: 90%;
-    max-width: 600px;
+    width: 50vw;
+    max-width: 800px;
+    min-width: 400px;
     margin: 100px auto 0;
     border: 6px solid brown; 
     border-radius: 10px;
@@ -103,13 +104,13 @@ body{
     <h1><img src="logo2.png" width="100" height="100" align="left">AbdulGafar TutorPoint Periodic CBT Evaluation</h1>
 <h3 align="center">
 <form >
-Subject:<input type="text" id="st" name="uname"/>
+Name:<input type="text" id="st" name="uname"/>
 </form>
 Class:<input type="text" id="cl" class="uclass"/>
 <br/>
 <div class="container">
 <h5>Time Left<br> <span id="demo"></span></h5>
-<h5 align = "left">(<span id="number">0</span> of 20)</h5></div>
+<h5 align = "left">(<span id="number">0</span> of 50)</h5></div>
 </h3>
     <div class="quiz">
         <h2 id="question">Question goes here</h2>
@@ -122,7 +123,7 @@ Class:<input type="text" id="cl" class="uclass"/>
            <button id="next-btn">Next</button>
    <div class="b">
          <button hidden id="clear-btn" onclick="location.reload()">Reset</button>
-         <button hidden id="print-btn" onclick="myfunc()">Submit</button>
+         <button hidden id="print-btn" onclick="window.print()">Print</button>
    </div>
 <script>
 const questions = [
@@ -297,8 +298,8 @@ const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
 const resetButton = document.getElementById("clear-btn");
-const st6 = document.getElementById("st");
-const cl6 = document.getElementById("cl");
+const st = document.getElementById("st");
+const cl = document.getElementById("cl");
 const printButton = document.getElementById("print-btn");
 const number = document.getElementById("number")
 let currentQuestionIndex = 0;
@@ -312,7 +313,7 @@ function startQuiz(){
 }
 
 // Set the date we're counting down to
-var countDownDate = new Date(Date.now() + (5 * 60 * 1000)).getTime();
+var countDownDate = new Date(Date.now() + (20 * 60 * 1000)).getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -390,22 +391,6 @@ function selectAnswer(e){
     });
     nextButton.style.display = "block";
 }
-//Save data to local storage
-function myfunc() {
-    //event.preventDefault();
-    st.value;
-    cl.value;
-    score;
-
-    
-
-    localStorage.setItem('Name6', st.value);
-    localStorage.setItem('Class6', cl.value);
-    localStorage.setItem('Score6', score);
-    alert('Your result has been stored in the archive');
-    window.location.href ="subject.html";
-}
-    
 
 function showScore(){
     resetState();
@@ -440,6 +425,5 @@ nextButton.addEventListener("click",()=>{
 startQuiz();
 </script>
 </p>
-<marquee width="100%" behavior="scroll" bgcolor="lightpink">Contact AbdulGafar Tutorpoint @ +2348137649542 for more fantastic Web Designs</marquee>
 </body>
 </html>

@@ -255,15 +255,15 @@ Class:<input type="text" id="cl" class="uclass"/>
 const questions = [
 {
 
-question: ".Given that the total fixed cost is N1000, total variable cost N2500 and output,100 units. Find the average total cost of producing 1 unit",
+question: ". Travelling by air nowadays is an*essential evil*",
 
 answers: [
 
-    { text: "A.N30", correct: false},
+    { text: "A.Metaphor", correct: false},
 
-    { text: "B.N35", correct: true},
+    { text: "B.Oxymoron", correct: true},
 
-    { text: "C.N60", correct: false},
+    { text: "C.Litotes", correct: false},
 
 ]
 
@@ -271,49 +271,15 @@ answers: [
 
 {
 
-question: "Cost of raw materials in production is an example of ___.",
+question: "Everyone should realize *life is but deferred death*.",
 
 answers: [
 
-    { text: "A.Marginal cost", correct: false},
+    { text: "A.Simile", correct: false},
 
-    { text: "B.Fixed cost", correct: false},
+    { text: "B.Hyperbole", correct: false},
 
-    { text: "C.Varaiable cost", correct: true},
-
-]
-
-},
-
-
-
-{
-
-question:".In a small scale business, the fixed cost is N5000, variable cost is N15000 and the output is 500 units. What will be the unit cost of the goods?",
-
-answers: [
-
-    { text: "A.N40", correct: true},
-
-    { text: "B.N60", correct: false},
-
-    { text: "C.N80", correct: false},
-
-]
-
-},
-
-{
-
-question: ".The generally accepted definition of economics was given by ___",
-
-answers: [
-
-    { text: "A. Adam Smith", correct: false},
-
-    { text: "B.Alfred Marshall", correct: false},
-
-    { text: "C.Lionel Robbins", correct: true},
+    { text: "C.Paradox", correct: true},
 
 ]
 
@@ -323,15 +289,15 @@ answers: [
 
 {
 
-question: ".Land refers to all forms of natural resources that can attract the payment of ____",
+question:".*If you want to live long, drive very fast*",
 
 answers: [
 
-    { text: "A.Interest", correct: false},
+    { text: "A.Irony", correct: true},
 
-    { text: "B.Royalties", correct: true},
+    { text: "B.Oxymoron", correct: false},
 
-    { text: "C.Wages", correct: false},
+    { text: "C.litotes", correct: false},
 
 ]
 
@@ -339,15 +305,33 @@ answers: [
 
 {
 
-question: ".The factor of production that coordinates other factors of production is",
+question: ".The Man often tells his wife that he has *an ocean of love for her*",
 
 answers: [
 
-    { text: "A.Entrepreneur", correct: true},
+    { text: "A. Oxymoron", correct: false},
 
-    { text: "B.Capital", correct: false},
+    { text: "B.Simile", correct: false},
 
-    { text: "C.Labour", correct: false},
+    { text: "C.Hyperbole", correct: true},
+
+]
+
+},
+
+
+
+{
+
+question: ". Desmond is a speaker of *no little ability*",
+
+answers: [
+
+    { text: "A.Oxymoron", correct: false},
+
+    { text: "B.Hyperbole", correct: false},
+
+    { text: "C.litotes", correct: true},
 
 ]
 
@@ -355,15 +339,15 @@ answers: [
 
 {
 
-question: ".In what year was the land use decree promulgated?",
+question: ".We have a *slim chance* of winning the game",
 
 answers: [
 
-    { text: "1965", correct: false},
+    { text: "A.Simile", correct: false},
 
-    { text: "1978", correct: true},
+    { text: "B.Metarphor", correct: true},
 
-    { text: "1980", correct: false},
+    { text: "C.litotes", correct: false},
 
 ]
 
@@ -371,15 +355,15 @@ answers: [
 
 {
 
-question: "The main reason for charging interest is to ___.",
+question: ".*The latest book of the author spoke* of his proficiency",
 
 answers: [
 
-    { text: "A.Redistribute profits", correct: true},
+    { text: "Metonymy", correct: false},
 
-    { text: "B.Reward entrepreneurship effort", correct: false},
+    { text: "Personification", correct: true},
 
-    { text: "C.Mobilize more funds for development", correct: false},
+    { text: "Synecdoche", correct: false},
 
 ]
 
@@ -387,15 +371,15 @@ answers: [
 
 {
 
-question: ".The act of combining factor inputs in order to obtain specific output is known as ___",
+question: "*How great is your mercy oh Lord?*.",
 
 answers: [
 
-    { text: "A.Factor procurement", correct: false},
+    { text: "A.Rhetorical", correct: true},
 
-    { text: "B.Industrialization", correct: false},
+    { text: "B.Synecdoche", correct: false},
 
-    { text: "C.Production", correct: true},
+    { text: "C.litotes", correct: false},
 
 ]
 
@@ -403,15 +387,31 @@ answers: [
 
 {
 
-question: ". Freedom of consumption and production are characteristics of",
+question: ". The host invited *so many queens of the night* to the party",
 
 answers: [
 
-    { text: "A.Socialism", correct: false},
+    { text: "A.Metonymy", correct: false},
 
-    { text: "B.Capitalism", correct: true},
+    { text: "B.Euphemism", correct: true},
 
-    { text: "C.Communism", correct: false},
+    { text: "C.Oxymoron", correct: false},
+
+]
+
+},
+
+{
+
+question: ". Uneasy lies *the head* that wears a crown",
+
+answers: [
+
+    { text: "A.Litotes", correct: false},
+
+    { text: "B.Synecdoche", correct: true},
+
+    { text: "C.Metarphor", correct: false},
 
 ]
 
@@ -431,9 +431,9 @@ const nextButton = document.getElementById("next-btn");
 
 const resetButton = document.getElementById("clear-btn");
 
-const st8 = document.getElementById("st");
+const st4 = document.getElementById("st");
 
-const cl8 = document.getElementById("cl");
+const cl4 = document.getElementById("cl");
 
 const printButton = document.getElementById("print-btn");
 
@@ -625,9 +625,9 @@ function myfunc() {
 
     
 
-    localStorage.setItem('Name8', st.value);
-    localStorage.setItem('Class8', cl.value);
-    localStorage.setItem('Score8', score);
+    localStorage.setItem('Name4', st.value);
+    localStorage.setItem('Class4', cl.value);
+    localStorage.setItem('Score4', score);
     alert('Your result has been stored in the archive');
     window.location.href ="subject.html";
 }
