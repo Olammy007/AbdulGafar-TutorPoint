@@ -123,7 +123,7 @@ Class:<input type="text" id="cl" class="uclass"/>
            <button id="next-btn">Next</button>
    <div class="b">
          <button hidden id="clear-btn" onclick="location.reload()">Reset</button>
-         <button hidden id="print-btn" onclick="window.print()">Print</button>
+         <button hidden id="print-btn" onclick="window.print()">Submit</button>
    </div>
 <script>
 const questions = [
@@ -284,6 +284,246 @@ const questions = [
         ]
     },
     {
+        question: ".Which of he following is the most specialized?",
+        answers: [
+            { text: "A.Spirogyra", correct: false},
+            { text: "B.Amoeba", correct: false},
+            { text: "C.Rhizopus", correct: true},
+        ]
+    },
+    {
+        question: ".Which of the following causes pollution?",
+        answers: [
+            { text: "A.Burning of refuse", correct: true},
+            { text: "B.Consumption of canned food", correct: false},
+            { text: "C.Respiration of living organism", correct: false},
+        ]
+    },
+    {
+        question: ".Environmental pollutants which can work through the media of water, soil and air include ___",
+        answers: [
+            { text: "A.Carbon monoxide", correct: false},
+            { text: "B.Noise", correct: false},
+            { text: "C.Sulphur(iv)oxide", correct: true},
+        ]
+    },
+    {
+        question: ".Which is the most important pollutant of the marine environment in Nigeria?",
+        answers: [
+            { text: "A.Sewage", correct: false},
+            { text: "B.Oil", correct: true},
+            { text: "C.Insecticides", correct: false},
+        ]
+    },
+    {
+        question: ".Which of the following associations can upset the balance of nature?",
+        answers: [
+            { text: "A.Parasitism", correct: true},
+            { text: "B.Symbiosis", correct: false},
+            { text: "C.Saprophytism", correct: false},
+        ]
+    },
+    {
+        question: ".The major pollutant around airport residential areas is",
+        answers: [
+            { text: "A.Carbon(iv)oxide", correct: false},
+            { text: "B.Dust", correct: false},
+            { text: "C.Noise", correct: true},
+        ]
+    },
+    {
+        question: "The effect of chlorofluorocarbon is___.",
+        answers: [
+            { text: "A.Screening of ultra violet rays", correct: false},
+            { text: "B.Increase in the carbondioxide concentration", correct: false},
+            { text: "C.Depletion of the ozone layer", correct: true},
+        ]
+    },
+    {
+        question: ".The following are greenhouse effect EXCEPT ____",
+        answers: [
+            { text: "A.Carbondioxide", correct: false},
+            { text: "B.Oxygen", correct: true},
+            { text: "C.Methane", correct: false},
+        ]
+    },
+    {
+        question: ".The following are effects of noise pollution EXCEPT ____",
+        answers: [
+            { text: "A.Loss of sight", correct: true},
+            { text: "B.High blood pressure", correct: false},
+            { text: "C.Emotional disorder", correct: false},
+        ]
+    },
+    {
+        question: ".Which of the following structural features are adapted for uses other than water conservation?",
+        answers: [
+            { text: "A.Spines in plants", correct: false},
+            { text: "B.Scales in animals", correct: false},
+            { text: "C.Feathers in birds", correct: true},
+        ]
+    },
+    {
+        question: ".Which of the following resources is competed for by organisms in the desert?",
+        answers: [
+            { text: "A.Oxygen", correct: false},
+            { text: "B.Water", correct: true},
+            { text: "C.Light", correct: false},
+        ]
+    },
+    {
+        question: ".Special modifications which enable an organism to survive in its habitat is known as___",
+        answers: [
+            { text: "A.Adaptation", correct: true},
+            { text: "B.Tolerance", correct: false},
+            { text: "C.Colouration", correct: false},
+        ]
+    },
+    {
+        question: ".Pneumatophores are essential for ____",
+        answers: [
+            { text: "A.Movement", correct: false},
+            { text: "B.Growth", correct: false},
+            { text: "C.Breathing", correct: true},
+        ]
+    },
+    {
+        question: ".Rabbits cannot survive in an aquatic habitat because they have___",
+        answers: [
+            { text: "A.No gills", correct: true},
+            { text: "B.No fins", correct: false},
+            { text: "C.No scales", correct: false},
+        ]
+    },
+    {
+        question: ".Most tropical plants shed their leaves during dry weather conditions in order to ___",
+        answers: [
+            { text: "A.Reduce competition", correct: false},
+            { text: "B.Conserve water", correct: true},
+            { text: "C.minimize the rate of photosynthesis", correct: false},
+        ]
+    },
+    {
+        question: ".Which of the following features is not an adaptation of plants to aquatic habitats? ",
+        answers: [
+            { text: "A.flowers raised above water for the purpose of pollination", correct: false},
+            { text: "B.hairy structures on the leaves to reduce water loss", correct: true},
+            { text: "C.Spongy tissues containing gases for buoyancy", correct: false},
+        ]
+    },
+    {
+        question: ".Xerophytes have the following characteristics aimed at conserving water EXCEPT ___",
+        answers: [
+            { text: "A.Broad leaf surfaces", correct: true},
+            { text: "B.Thick cuticle", correct: false},
+            { text: "C.Sunken stomata", correct: false},
+        ]
+    },
+    {
+        question: ".The organelle which eliminates water from the body of a protozoan is the ___",
+        answers: [
+            { text: "A.Nucleus", correct: false},
+            { text: "B.Plasma membrane", correct: false},
+            { text: "C.Contractile vacuole", correct: true},
+        ]
+    },
+    {
+        question: ".Which of the following factors is the main problem facing xerophytic plants?",
+        answers: [
+            { text: "A.Lack of adequate water", correct: true},
+            { text: "B.Conservation of excess water", correct: false},
+            { text: "C.Competition for sunlight", correct: false},
+        ]
+    },
+    {
+        question: ".How are Savannah plants protected from bush fires? They __",
+        answers: [
+            { text: "A.Have sunken stomata", correct: false},
+            { text: "B.Roll their leaves during hot days", correct: false},
+            { text: "C.Have thick barks", correct: true},
+        ]
+    },
+    {
+        question: ".The sign + is used to indicate an association where an organism gains, while 0 is used where an organism is unaffected. An association indicated as + 0 is known as __",
+        answers: [
+            { text: "A.Commensalism", correct: true},
+            { text: "B.Parasitism", correct: false},
+            { text: "C.Predation", correct: false},
+        ]
+    },
+    {
+        question: ".The biological association that contributes directly to succession in a community is ___",
+        answers: [
+            { text: "A.Predation", correct: false},
+            { text: "B.Competition", correct: true},
+            { text: "C.Commensalism", correct: false},
+        ]
+    },
+    {
+        question: ".The relationship between a herbivore and the bacteria  which lives  in its caecum is known as ___",
+        answers: [
+            { text: "A.Symbiosis", correct: true},
+            { text: "B.Saprophytism", correct: false},
+            { text: "C.Parasitism", correct: false},
+        ]
+    },
+    {
+        question: "What type of relationship exists between a tapeworm and an infected mammal?",
+        answers: [
+            { text: "A.Commensalism", correct: false},
+            { text: "B.Saprophytism", correct: false},
+            { text: "C.Parasitism", correct: true},
+        ]
+    },
+    {
+        question: ".Which of the following processes does not contribute to the maintenance of the nitrogen content of the soil",
+        answers: [
+            { text: "A.Decomposition", correct: false},
+            { text: "B.Dentrification", correct: true},
+            { text: "C.Nitrification", correct: false},
+        ]
+    },
+    {
+        question: ".Which of the following fixes atmospheric nitrogen?",
+        answers: [
+            { text: "A.Nitrosomonas", correct: false},
+            { text: "B.Nitrobacter", correct: false},
+            { text: "C.Rhizobium", correct: true},
+        ]
+    },
+    {
+        question: ".An organism found on a bare rock surfaces has features of algae and fungi. The organism is a/an___",
+        answers: [
+            { text: "A.Epiphyte", correct: false},
+            { text: "B.Lichen", correct: true},
+            { text: "C.Fern", correct: false},
+        ]
+    },
+    {
+        question: ".A multinucleate body without internal cell boundaries is a characteristic of __",
+        answers: [
+            { text: "A.Fungi", correct: true},
+            { text: "B.Bacteria", correct: false},
+            { text: "C.Algae", correct: false},
+        ]
+    },
+    {
+        question: ".In rhizopus, carbohydrates is stored in the form of __",
+        answers: [
+            { text: "A.glucose", correct: false},
+            { text: "B.glycogen", correct: true},
+            { text: "C.starch", correct: false},
+        ]
+    },
+    {
+        question: ".In the binomial system of naming organisms, the second name is called the ___",
+        answers: [
+            { text: "A.Specific name", correct: true},
+            { text: "B.Scientific name", correct: false},
+            { text: "C.Generic name", correct: false},
+        ]
+    },
+    {
         question: ".Which of the following characteristics is that of a plant?",
         answers: [
             { text: "A.absence of chlorophyll", correct: false},
@@ -441,6 +681,7 @@ nextButton.addEventListener("click",()=>{
 });
 startQuiz();
 </script>
+<marquee style='color: white; background-color: blue;'>Contact AbdulGafar Tutorpoint @ +2348137649542 for more fantastic Web Designs</marquee>
 </p>
 </body>
 </html>
